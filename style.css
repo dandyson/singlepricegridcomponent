@@ -1,0 +1,113 @@
+/** MOBILE PHONE DESIGN **/
+
+/* General */
+
+body {
+  font-family: "Karla", sans-serif;
+  background-color: #e6eff6;
+}
+
+.divContent {
+  padding-top: 15px;
+  padding-left: 30px;
+}
+
+h2 {
+  font-size: 1.2em;
+}
+
+/* Main Div */
+
+#mainDiv {
+  margin: 50px auto;
+  width: 85%;
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: 40% 30% 30%;
+}
+
+/* Community Div */
+
+#communityDiv {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  background-color: white;
+  grid-row-start: 1;
+  grid-column-end: 2;
+}
+
+#communityDiv h2 {
+  font-weight: 700;
+  color: hsl(179, 62%, 43%);
+}
+
+#communityDesc1 {
+  margin-top: 25px;
+  font-weight: 700;
+  font-size: 17px;
+  color: hsl(71, 73%, 54%);
+}
+
+#communityDesc2 {
+  line-height: 25px;
+  color: hsl(218, 22%, 67%);
+  font-size: 12px;
+  width: 90%;
+}
+
+/*Subscription Div*/
+
+#subscriptionDiv {
+  color: #bfeaea;
+  background-color: hsl(179, 62%, 43%);
+  grid-row-start: 2;
+  grid-row-end: 3;
+}
+#price {
+  color: white;
+  margin: 0;
+  font-size: 1.8em;
+}
+
+#subscriptionDesc1 {
+  color: #5fc8c7;
+  position: relative;
+  top: -5.5px;
+  left: 13px;
+  font-size: 0.5em;
+}
+
+#subBut {
+  margin-top: 10px;
+  margin-bottom: 100px;
+  border-radius: 10px;
+  border: none;
+  background-color: hsl(71, 73%, 54%);
+  height: 40px;
+  width: 90%;
+  font-size: 1em;
+  color: #bfeaea;
+  -webkit-box-shadow: 10px 10px 16px 0px rgba(0, 0, 0, 0.24);
+  -moz-box-shadow: 10px 10px 16px 0px rgba(0, 0, 0, 0.24);
+  box-shadow: 10px 10px 16px 0px rgba(0, 0, 0, 0.24);
+}
+
+/* Why Div */
+
+#whyDiv {
+  background-color: hsl(179, 62%, 43%);
+  color: #bfeaea;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+#whyDiv ul {
+  font-size: 13px;
+  padding: 0;
+  list-style: none;
+}
+
+#whyDiv li {
+  margin-top: 3px;
+  font-weight: 200;
+}
