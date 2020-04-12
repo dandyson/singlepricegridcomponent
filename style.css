@@ -51,7 +51,7 @@ h2 {
 #communityDesc2 {
   line-height: 25px;
   color: hsl(218, 22%, 67%);
-  font-size: 12px;
+  font-size: 13px;
   width: 90%;
 }
 
@@ -63,24 +63,30 @@ h2 {
   grid-row-start: 2;
   grid-row-end: 3;
 }
+
 #price {
   color: white;
   margin: 0;
-  font-size: 1.8em;
+  font-size: 1.6em;
+  font-weight: 700;
 }
 
 #subscriptionDesc1 {
   color: #5fc8c7;
   position: relative;
-  top: -5.5px;
   left: 13px;
   font-size: 0.5em;
 }
 
+#subscriptionDesc2 {
+  margin: 10px;
+  font-size: 0.8em;
+}
+
 #subBut {
-  margin-top: 10px;
+  margin-top: 20px;
   margin-bottom: 100px;
-  border-radius: 10px;
+  border-radius: 5px;
   border: none;
   background-color: hsl(71, 73%, 54%);
   height: 40px;
@@ -95,7 +101,7 @@ h2 {
 /* Why Div */
 
 #whyDiv {
-  background-color: hsl(179, 62%, 43%);
+  background-color: #4abebd;
   color: #bfeaea;
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
@@ -110,4 +116,49 @@ h2 {
 #whyDiv li {
   margin-top: 3px;
   font-weight: 200;
+}
+
+/** MEDIA QUERy FOR DESKTOP **/
+
+@media only screen and (min-device-width: 768px) {
+  #mainDiv {
+    margin-top: 150px;
+    width: 60%;
+    max-width: 700px;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 45% 55%;
+  }
+
+  #communityDiv {
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start: 1;
+    grid-column-end: 3;
+  }
+
+  #subscriptionDiv {
+    grid-row-start: 2;
+    grid-row-end: 3;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    border-bottom-left-radius: 10px;
+  }
+
+  #whyDiv {
+    padding: 15px 0 0 40px;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    border-bottom-left-radius: 0px;
+  }
+
+  #whyDiv li {
+    margin-top: 5px;
+    font-weight: 200;
+  }
+
+  #subBut {
+    margin-bottom: 55px;
+  }
 }
